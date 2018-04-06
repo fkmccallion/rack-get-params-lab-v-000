@@ -24,7 +24,7 @@ class Application
       end
     elsif req.path.match(/add/)
       search = req.params["item"]
-      binding.pry
+      #binding.pry
       if @@items.include?(search)
         @@cart << search
         resp.write "added #{search}"

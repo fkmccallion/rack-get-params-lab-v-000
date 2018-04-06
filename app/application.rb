@@ -22,10 +22,6 @@ class Application
           resp.write "#{item}\n"
         end
       end
-    elsif req.path.match(/add/)
-      binding.pry
-      search = req.params["item"]
-
     else
       resp.write "Path Not Found"
     end

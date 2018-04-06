@@ -24,6 +24,7 @@ class Application
       end
     elsif req.path.match(/add/)
       search = req.params["q"]
+      binding.pry
       if @@items.include?(search)
         resp.write "#{search} is one of our items"
       else

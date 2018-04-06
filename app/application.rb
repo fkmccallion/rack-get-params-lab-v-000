@@ -28,6 +28,7 @@ class Application
         resp.write "#{search} is one of our items"
       else
         resp.write "Couldn't find #{search}"
+      end
     else
       resp.write "Path Not Found"
     end

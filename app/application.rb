@@ -24,7 +24,7 @@ class Application
       end
     elsif req.path.match(/add/)
       search = req.params["item"]
-
+      binding.pry
     else
       resp.write "Path Not Found"
     end
